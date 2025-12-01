@@ -1,0 +1,220 @@
+{
+  "products": [
+    {
+      "_id": 1,
+      "name": "Classic Trench Coat",
+      "category": "Coats",
+      "price": 120.00,
+      "description": "Timeless trench coat perfect for any season",
+      "image": "images/coat.jpg",
+      "inStock": true,
+      "rating": 4.5
+    },
+    {
+      "_id": 2,
+      "name": "Leather Ankle Boots",
+      "category": "Footwear",
+      "price": 150.00,
+      "description": "Premium leather ankle boots with comfort soles",
+      "image": "images/boots.jpg",
+      "inStock": true,
+      "rating": 4.7
+    },
+    {
+      "_id": 3,
+      "name": "Silk Scarf",
+      "category": "Accessories",
+      "price": 45.00,
+      "description": "Luxurious silk scarf in various colors",
+      "image": "images/scraf.jpg",
+      "inStock": true,
+      "rating": 4.3
+    },
+    {
+      "_id": 4,
+      "name": "Wool Fedora Hat",
+      "category": "Accessories",
+      "price": 60.00,
+      "description": "Classic wool fedora hat for stylish look",
+      "image": "images/wollen-hat.jpg",
+      "inStock": true,
+      "rating": 4.4
+    },
+    {
+      "_id": 5,
+      "name": "Leather Shoulder Bag",
+      "category": "Bags",
+      "price": 180.00,
+      "description": "Elegant leather shoulder bag with multiple compartments",
+      "image": "images/bag.jpg",
+      "inStock": true,
+      "rating": 4.6
+    },
+    {
+      "_id": 6,
+      "name": "Premium Jeans",
+      "category": "Bottoms",
+      "price": 85.00,
+      "description": "High-quality denim jeans with perfect fit",
+      "image": "images/jeans.jpg",
+      "inStock": true,
+      "rating": 4.5
+    },
+    {
+      "_id": 7,
+      "name": "Relaxed-Fit Blouse",
+      "category": "Tops",
+      "price": 75.00,
+      "description": "Light and airy blouse, a new arrival item.",
+      "image": "images/blouse-new-arrival.jpg",
+      "inStock": true,
+      "rating": 4.4
+    },
+    {
+      "_id": 8,
+      "name": "Tailored Trousers",
+      "category": "Bottoms",
+      "price": 95.00,
+      "description": "Olive tailored trousers, versatile for work or casual wear.",
+      "image": "images/trousers-new-arrival.jpg",
+      "inStock": true,
+      "rating": 4.6
+    },
+    {
+      "_id": 9,
+      "name": "Fine Knit Sweater",
+      "category": "Knitwear",
+      "price": 110.00,
+      "description": "Grey fine knit sweater, a comfortable new arrival item.",
+      "image": "images/sweater-new-arrival.jpg",
+      "inStock": true,
+      "rating": 4.7
+    },
+    {
+      "_id": 10,
+      "name": "The Everyday Look Set",
+      "category": "Shop The Look",
+      "price": 350.00,
+      "description": "A curated set featuring a suit and bag from the 'Shop the Look' section.",
+      "image": "images/shop-the-look.jpg",
+      "inStock": true,
+      "rating": 4.8
+    }
+  ],
+  "faqs": [
+    {
+      "_id": 1,
+      "question": "What is your return policy?",
+      "answer": "We have a 30-day return policy. If you're not satisfied, we'll make it right!"
+    },
+    {
+      "_id": 2,
+      "question": "How long does shipping take?",
+      "answer": "We offer fast and reliable shipping. Your order will arrive within 5-7 business days."
+    },
+    {
+      "_id": 3,
+      "question": "Do you offer international shipping?",
+      "answer": "Yes, we ship worldwide! International orders may take 10-14 business days."
+    },
+    {
+      "_id": 4,
+      "question": "How can I track my order?",
+      "answer": "You'll receive a tracking number via email once your order ships."
+    },
+    {
+      "_id": 5,
+      "question": "What payment methods do you accept?",
+      "answer": "We accept all major credit cards, PayPal, and Apple Pay."
+    }
+  ],
+  "journal_entries": [
+    {
+      "_id": 1,
+      "title": "5 Must-Have Accessories for Fall",
+      "content": "Discover the top accessories that will elevate your fall wardrobe this season.",
+      "author": "Fashion Team",
+      "date": "2024-10-15"
+    },
+    {
+      "_id": 2,
+      "title": "5 Ways to Style a Classic Trench",
+      "content": "From dawn to dusk, discover the versatility of an iconic wardrobe staple.",
+      "author": "Fashion Team",
+      "date": "2024-10-10"
+    },
+    {
+      "_id": 3,
+      "title": "The Art of Layering",
+      "content": "Mastering texture and proportion for elegant, functional outfits.",
+      "author": "Fashion Team",
+      "date": "2024-10-05"
+    }
+  ],
+  "site_information": {
+    "brand_name": "Atelier",
+    "mission_statement": "Effortless Elegance, Redefined. Discover our Pre-Fall '24 collection, a seamless blend of timeless design and modern sensibility."
+  },
+  "navigation_links": [
+    {
+      "name": "New Arrivals",
+      "type": "Primary",
+      "target": "/new-arrivals"
+    },
+    {
+      "name": "Women",
+      "type": "Primary",
+      "target": "/women"
+    },
+    {
+      "name": "Men",
+      "type": "Primary",
+      "target": "/men"
+    },
+    {
+      "name": "Accessories",
+      "type": "Primary",
+      "target": "/accessories"
+    },
+    {
+      "name": "Journal",
+      "type": "Primary",
+      "target": "/journal"
+    },
+    {
+      "name": "About Us",
+      "type": "Footer - About",
+      "target": "/about-us"
+    },
+    {
+      "name": "Our Stores",
+      "type": "Footer - About",
+      "target": "/stores"
+    },
+    {
+      "name": "Careers",
+      "type": "Footer - About",
+      "target": "/careers"
+    },
+    {
+      "name": "Shop All",
+      "type": "Footer - Shop",
+      "target": "/shop-all"
+    },
+    {
+      "name": "Coats",
+      "type": "Footer - Shop",
+      "target": "/coats"
+    },
+    {
+      "name": "Bags",
+      "type": "Footer - Shop",
+      "target": "/bags"
+    },
+    {
+      "name": "Footwear",
+      "type": "Footer - Shop",
+      "target": "/footwear"
+    }
+  ]
+}

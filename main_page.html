@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main_page.css">
+    <title>Fashion-freek</title>
+    <script src="main_page.js"></script>
+</head>
+<body>
+    <header class="main_page_navbar">
+        <nav>
+            <div id="logo">
+                <h1>Fashion-freek</h1>
+            </div>
+            <ul>
+                <li><a href="main_page.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn-signin">Sign In</button>
+                <button class="btn-signup">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+    <section class="hero-section">
+        <h1>Effortless Elegance, Redefined</h1>
+        <p>Discover the Fall'25 Collection, a curtion of timeless</br> pieces of mordern Wardrobe.</p>
+        <button>Shop Now</button>
+    </section>
+    <section class="New Arrivals">
+        <h2>New Arrivals</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="images/coat.jpg" alt="Product 1">
+                <h3>Classic Trench Coat</h3>
+                <p>$120.00</p>
+            </div>
+            <div class="product-item">
+                <img src="images/boots.jpg" alt="Product 2">
+                <h3>Leather Ankle Boots</h3>
+                <p>$150.00</p>
+            </div>
+            <div class="product-item">
+                <img src="images/scraf.jpg" alt="Product 3">
+                <h3>Silk Scarf</h3>
+                <p>$45.00</p>
+            </div>
+            <div class="product-item">
+                <img src="images/wollen-hat.jpg" alt="Product 4">
+                <h3>Wool Fedora Hat</h3>
+                <p>$60.00</p>
+            </div>
+        </div>
+    </section>
+    <section class="style">
+        <img src="images/styleguide.jpg" alt="Style Image">
+        <div class="style-text">    
+            <h2>Embrace Your Unique Style</h2>
+            <p>At Fashion-freek, we believe that fashion is a form of self-expression. Our curated collections are designed to help you embrace your unique style and make a statement wherever you go. Explore our latest arrivals and find pieces that resonate with your personality.</p>
+            <button>Explore More</button>
+    </section>
+    <section class="style_guide_journal">
+        <h2>Style Guide & Journal</h2>
+        <div class="journal-entries">
+            <div class="entry">
+                <h3>5 Must-Have Accessories for Fall</h3>
+                <p>Discover the top accessories that will elevate your fall wardrobe this season.</p>
+            </div>
+            <button>Read More</button>
+           <img src="images/journal.jfif" alt="Journal Entry 1">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Fashion-freek. All rights reserved.</p>
+    </footer>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-container">
+        <div class="chatbot-header">
+            <h3>Fashion-freek Assistant</h3>
+            <button class="chatbot-close" id="chatbot-close">✕</button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="chatbot-message bot-message">
+                <p>Hi! 👋 Welcome to Fashion-freek. How can I help you today?</p>
+            </div>
+        </div>
+        <div class="chatbot-input-area">
+            <input 
+                type="text" 
+                id="chatbot-input" 
+                class="chatbot-input" 
+                placeholder="Type your message..."
+                autocomplete="off"
+            >
+            <button class="chatbot-send-btn" id="chatbot-send-btn">Send</button>
+        </div>
+    </div>
+
+    <!-- Chatbot Toggle Button -->
+    <button class="chatbot-toggle" id="chatbot-toggle">
+        <span class="chat-icon">💬</span>
+    </button>
+
+</body>
+</html>

@@ -1,0 +1,531 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #ffffff;
+}
+
+nav {
+  background-color: #fff;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #333;
+}
+nav #logo h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex: 1;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+nav ul li a:hover {
+  color: #d32f2f;
+}
+nav .nav-buttons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+nav .nav-buttons .btn-signin {
+  background-color: transparent;
+  color: #333;
+  border: 2px solid #333;
+  padding: 10px 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+nav .nav-buttons .btn-signin:hover {
+  background-color: #333;
+  color: #fff;
+}
+nav .nav-buttons .btn-signup {
+  background-color: #d32f2f;
+  color: #ffffff;
+  border: none;
+  padding: 10px 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+nav .nav-buttons .btn-signup:hover {
+  background-color: #b71c1c;
+}
+
+.hero-section {
+  background: url("images/herosection.jpg") center/cover no-repeat;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+}
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.hero-section h1 {
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 300;
+  margin-bottom: 15px;
+  z-index: 2;
+  position: relative;
+}
+.hero-section p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  z-index: 2;
+  position: relative;
+  line-height: 1.6;
+}
+.hero-section button {
+  background-color: #d32f2f;
+  color: #ffffff;
+  border: none;
+  padding: 12px 30px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 2;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+.hero-section button:hover {
+  background-color: #b71c1c;
+}
+
+.New.Arrivals {
+  padding: 60px 40px;
+  background-color: #ffffff;
+}
+.New.Arrivals h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
+.New.Arrivals .product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.New.Arrivals .product-grid .product-item {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.New.Arrivals .product-grid .product-item:hover {
+  transform: translateY(-5px);
+}
+.New.Arrivals .product-grid .product-item img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 15px;
+}
+.New.Arrivals .product-grid .product-item h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #333333;
+}
+.New.Arrivals .product-grid .product-item p {
+  font-size: 16px;
+  color: #666666;
+  font-weight: bold;
+}
+
+.style {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 60px 40px;
+  background-color: #f5f5f5;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.style img {
+  flex: 1;
+  max-height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.style .style-text {
+  flex: 1;
+}
+.style .style-text h2 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #333333;
+}
+.style .style-text p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666666;
+  margin-bottom: 30px;
+}
+.style .style-text button {
+  background-color: #d32f2f;
+  color: #ffffff;
+  border: none;
+  padding: 12px 30px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.style .style-text button:hover {
+  background-color: #b71c1c;
+}
+
+.style_guide_journal {
+  padding: 60px 40px;
+  background-color: #ffffff;
+}
+.style_guide_journal h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
+.style_guide_journal .journal-entries {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.style_guide_journal .journal-entries .entry {
+  flex: 1;
+}
+.style_guide_journal .journal-entries .entry h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #333333;
+}
+.style_guide_journal .journal-entries .entry p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666666;
+  margin-bottom: 30px;
+}
+.style_guide_journal .journal-entries button {
+  background-color: #d32f2f;
+  color: #ffffff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+.style_guide_journal .journal-entries button:hover {
+  background-color: #b71c1c;
+}
+.style_guide_journal .journal-entries img {
+  flex: 1;
+  max-height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer {
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.chatbot-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #d32f2f;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+.chatbot-toggle:hover {
+  background-color: #b71c1c;
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+.chatbot-toggle.active {
+  display: none;
+}
+
+.chatbot-container {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 350px;
+  height: 500px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.16);
+  display: none;
+  flex-direction: column;
+  z-index: 998;
+  animation: slideUp 0.3s ease;
+}
+.chatbot-container.active {
+  display: flex;
+}
+
+.chatbot-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #d32f2f;
+  color: #ffffff;
+  border-radius: 12px 12px 0 0;
+}
+.chatbot-header h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+.chatbot-header .chatbot-close {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+.chatbot-header .chatbot-close:hover {
+  transform: scale(1.2);
+}
+
+.chatbot-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+}
+.chatbot-messages::-webkit-scrollbar {
+  width: 6px;
+}
+.chatbot-messages::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+.chatbot-messages::-webkit-scrollbar-thumb {
+  background: #d32f2f;
+  border-radius: 3px;
+}
+.chatbot-messages::-webkit-scrollbar-thumb:hover {
+  background: #b71c1c;
+}
+
+.chatbot-message {
+  margin-bottom: 15px;
+  display: flex;
+  animation: fadeIn 0.3s ease;
+}
+.chatbot-message p {
+  max-width: 80%;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+.chatbot-message.bot-message {
+  justify-content: flex-start;
+}
+.chatbot-message.bot-message p {
+  background-color: #e8e8e8;
+  color: #333333;
+  border-bottom-left-radius: 4px;
+}
+.chatbot-message.user-message {
+  justify-content: flex-end;
+}
+.chatbot-message.user-message p {
+  background-color: #d32f2f;
+  color: #ffffff;
+  border-bottom-right-radius: 4px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.chatbot-input-area {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-top: 1px solid #e0e0e0;
+  border-radius: 0 0 12px 12px;
+}
+
+.chatbot-input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  transition: border-color 0.3s ease;
+}
+.chatbot-input:focus {
+  outline: none;
+  border-color: #d32f2f;
+  box-shadow: 0 0 0 2px rgba(211, 47, 47, 0.1);
+}
+.chatbot-input::-moz-placeholder {
+  color: #999999;
+}
+.chatbot-input::placeholder {
+  color: #999999;
+}
+
+.chatbot-send-btn {
+  padding: 10px 20px;
+  background-color: #d32f2f;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+}
+.chatbot-send-btn:hover {
+  background-color: #b71c1c;
+}
+.chatbot-send-btn:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+  nav #logo {
+    width: 100%;
+    text-align: center;
+  }
+  nav #logo h1 {
+    font-size: 20px;
+  }
+  nav ul {
+    gap: 20px;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  nav .nav-buttons {
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+  }
+  nav .nav-buttons .btn-signin,
+  nav .nav-buttons .btn-signup {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+  .hero-section {
+    height: 350px;
+  }
+  .hero-section h1 {
+    font-size: 32px;
+  }
+  .style {
+    flex-direction: column;
+  }
+  .style img {
+    max-height: 300px;
+  }
+  .style_guide_journal .journal-entries {
+    flex-direction: column;
+  }
+  .style_guide_journal .journal-entries img {
+    max-height: 300px;
+  }
+  .chatbot-container {
+    width: 90%;
+    height: 400px;
+    right: 5%;
+    bottom: 80px;
+  }
+  .chatbot-header h3 {
+    font-size: 14px;
+  }
+  .chatbot-header .chatbot-close {
+    font-size: 20px;
+    width: 28px;
+    height: 28px;
+  }
+  .chatbot-message p {
+    max-width: 90%;
+  }
+}/*# sourceMappingURL=main_page.css.map */
